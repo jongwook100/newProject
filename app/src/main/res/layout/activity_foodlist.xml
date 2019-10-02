@@ -13,33 +13,144 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:id="@+id/layout">
 
             <Button
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:background="#00F0ECEC"
-                android:drawableLeft="@drawable/bibimbap"
+                android:drawableLeft="@drawable/blackrice"
                 android:drawablePadding="18dip"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="18dip"
-                android:text="Videos"
+                android:text="흑미밥"
                 android:textColor="#181616"
-                android:textSize="36px" />
+                android:textSize="100px" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="142dp"
                 android:background="#00F0ECEC"
-                android:drawableLeft="@drawable/bibimnoodle"
+                android:drawableLeft="@drawable/kimchisoup"
                 android:drawablePadding="18dip"
                 android:gravity="left|center_vertical"
                 android:paddingLeft="18dip"
-                android:text="Videos"
+                android:text="김치찌개"
                 android:textColor="#181616"
-                android:textSize="36px" />
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/kimchimalnoodle"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="김치말이국수"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/spaghetti"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="스파게티"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/japchae"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="잡채밥"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/soyook"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="수육"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/udong"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="우동"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/myeolchi"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="멸치볶음"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/umook"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="어묵볶음"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00F0ECEC"
+                android:drawableLeft="@drawable/ukgaejang"
+                android:drawablePadding="18dip"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dip"
+                android:text="육계장"
+                android:textColor="#181616"
+                android:textSize="100px" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="추가하기" />
         </LinearLayout>
 
 
