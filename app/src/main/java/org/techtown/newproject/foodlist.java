@@ -15,6 +15,7 @@ import org.techtown.newproject.R;
 import java.util.LinkedList;
 
 public class foodlist extends AppCompatActivity {
+    LinkedList<Button> bt = new LinkedList<Button>();
     Button button11;
     LinearLayout layout;
     Context context;
@@ -23,7 +24,6 @@ public class foodlist extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_foodlist);
 
-        int count = 0;
         Button a = (Button)findViewById(R.id.button1);
         Button b = (Button)findViewById(R.id.button2);
         Button c = (Button)findViewById(R.id.button3);
@@ -39,7 +39,7 @@ public class foodlist extends AppCompatActivity {
         layout = (LinearLayout)findViewById(R.id.layout);
         context = this;
         //버튼을 링크드리스트로 구현하기
-        LinkedList<Button> bt = new LinkedList<Button>();
+
         bt.add(a);
         bt.add(b);
         bt.add(c);
@@ -63,8 +63,17 @@ public class foodlist extends AppCompatActivity {
            @Override
            public void onClick(View v){
                Button btn = new Button(context);
-               btn.setText("버튼"+String.valueOf(1));
+               btn.setText("버튼"+String.valueOf("레시피 추가 버튼"));
                layout.addView(btn);
+               bt.add(btn);
+               btn.setOnClickListener(
+                       new Button.OnClickListener(){
+                           public void onClick(View view){
+                               Intent intent=new Intent(getApplicationContext(), MyRecipe.class);
+                               startActivity(intent);
+                           }
+                       }
+               );
            }
        });
 

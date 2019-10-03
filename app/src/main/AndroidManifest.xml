@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".blackrice"></activity>
+        <activity android:name=".MyRecipe"></activity>
+        <activity android:name=".blackrice" />
         <activity android:name=".LoadingActivity" />
         <activity android:name=".foodlist" />
         <activity android:name=".MainActivity">
