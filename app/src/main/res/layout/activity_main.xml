@@ -11,8 +11,8 @@
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="532dp"
-        android:background="#ADFF2F"
+        android:layout_marginBottom="530dp"
+        android:background="@drawable/btn_black_pingk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
@@ -24,7 +24,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="80dp"
             android:layout_marginBottom="532dp"
-            android:background="#ADFF2F"
+            android:background="@null"
             android:gravity="center"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -35,41 +35,43 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
             android:background="@null"
-            android:src="@drawable/today_bar"/>
+            android:src="@drawable/time_logo"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="428dp"
+        android:background="@drawable/logo_feeling"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent">
     </RelativeLayout>
 
 
     <RelativeLayout
-        android:layout_width="285dp"
-        android:layout_height="172dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="270dp"
-        android:layout_marginBottom="348dp"
-        android:background="@color/colorAccent"
+        android:layout_marginRight="280dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/btn_pingk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="188dp"
-        android:background="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" >
 
         <Button
-            android:id="@+id/informbutton"
+            android:id="@null"
             android:layout_width="240dp"
-            android:layout_height="160dp"
-            android:layout_marginBottom="188dp"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
             android:background="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -80,9 +82,57 @@
         <TextView
             android:layout_width="105dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="125dp"
+            android:layout_marginTop="110dp"
             android:gravity="center"
-            android:background="@color/colorAccent"
+            android:background="@null"
+            android:text="Feeling\n레시피"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:src="@drawable/recipe_menu"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/btn_pingk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/informbutton"
+            android:layout_width="240dp"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:background="@null"
             android:text="레시피 정보"
             android:textSize="20dp"
             android:textColor="#000"
@@ -93,23 +143,21 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
             android:background="@null"
-            android:src="@drawable/recipe_menu"/>
+            android:src="@drawable/recipe_btn"/>
     </RelativeLayout>
 
 
-
-    =======
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="158dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/colorAccent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/btn_pingk"
         android:text="레시피 정보"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -120,7 +168,8 @@
 
         <Button
             android:layout_width="240dp"
-            android:layout_height="160dp"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
             android:background="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -128,14 +177,14 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:layout_width="240dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="90dp"
             android:background="@null"
-            android:text="맞춤 운동"
+            android:text="기록 정보"
             android:textSize="20dp"
             android:textColor="#000"
             android:textStyle="bold"
-            android:layout_marginRight="120dp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -143,57 +192,11 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:layout_marginRight="15dp"
+            android:layout_width="150dp"
+            android:layout_height="230dp"
+            android:layout_margin="22dp"
             android:background="@null"
-            android:src="@drawable/health_menu" />
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="125dp"
-        android:layout_height="160dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/colorAccent"
-        android:text="개인정보 입력"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:layout_width="125dp"
-            android:layout_height="160dp"
-            android:background="@null"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.944"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@null"
-            android:layout_marginTop="100dp"
-            android:text="개인정보"
-            android:textSize="20dp"
-            android:textColor="#000"
-            android:textStyle="bold"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.944"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_margin="15dp"
-            android:background="@null"
-            android:src="@drawable/star_menu" />
+            android:src="@drawable/today_bar" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
