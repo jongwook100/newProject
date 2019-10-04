@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:inputType="number"
     tools:context=".foodlist">
 
     <ScrollView
@@ -15,6 +16,29 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:id="@+id/layout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="283dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="삭제하고자 하는 인덱스 값" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="입력" />
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/button1"
@@ -53,7 +77,7 @@
                 android:paddingLeft="18dip"
                 android:text="김치말이국수"
                 android:textColor="#181616"
-                android:textSize="100px" />
+                android:textSize="95px" />
 
             <Button
                 android:id="@+id/button4"
@@ -151,6 +175,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="추가하기" />
+
         </LinearLayout>
 
 

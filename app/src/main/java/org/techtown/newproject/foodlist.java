@@ -6,19 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.techtown.newproject.R;
+import org.w3c.dom.Text;
 
 import java.util.LinkedList;
 
 public class foodlist extends AppCompatActivity {
-    LinkedList<Button> bt = new LinkedList<Button>();
+    static LinkedList<Button> bt = new LinkedList<Button>();
     Button button11;
+    Button button12;
     LinearLayout layout;
     Context context;
+    EditText editText1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +56,20 @@ public class foodlist extends AppCompatActivity {
         bt.add(h);
         bt.add(i);
         bt.add(j);
+        //원하는 요리법 삭제 코드
+        final EditText editText1 = (EditText) findViewById(R.id.editText);
+        Button please = (Button)findViewById(R.id.button13);
+        please.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View view){
+                        layout.removeView((View) bt.get(Integer.parseInt(editText1.getText().toString())));
+                        bt.remove(Integer.parseInt(editText1.getText().toString()));
+                    }
+                }
+        );
+
+
+
         //흑미밥 레시피 넘어가는 코드
         a.setOnClickListener(
                 new Button.OnClickListener(){
@@ -59,6 +79,9 @@ public class foodlist extends AppCompatActivity {
                     }
                 }
         );
+
+
+
        button11.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v){
