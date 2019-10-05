@@ -38,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-
+        Button mybutton =findViewById(R.id.myrbutton);
+        mybutton.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View view){
+                        Intent intent=new Intent(getApplicationContext(), MyRecipe.class);
+                        startActivity(intent);
+                    }
+                }
+        );
     }
 }

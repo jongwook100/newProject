@@ -197,6 +197,15 @@
             android:layout_margin="22dp"
             android:background="@null"
             android:src="@drawable/today_bar" />
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/myrbutton"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:text="나만의 레시피"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="528dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
