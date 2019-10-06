@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -167,6 +168,7 @@
         >
 
         <Button
+            android:id="@null"
             android:layout_width="240dp"
             android:layout_height="300dp"
             android:layout_margin="5dp"
@@ -181,7 +183,7 @@
             android:layout_height="400dp"
             android:layout_marginTop="90dp"
             android:background="@null"
-            android:text="기록 정보"
+            android:text="기록 저장"
             android:textSize="20dp"
             android:textColor="#000"
             android:textStyle="bold"
@@ -197,15 +199,54 @@
             android:layout_margin="22dp"
             android:background="@null"
             android:src="@drawable/today_bar" />
-
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/myrbutton"
-        android:layout_width="210dp"
-        android:layout_height="55dp"
-        android:text="나만의 레시피"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="528dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_pingk"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <Button
+            android:id="@+id/myrbutton"
+            android:layout_width="240dp"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:text="나만의 레시피"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:src="@drawable/today_bar" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

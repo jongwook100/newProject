@@ -24,6 +24,7 @@ public class MyRecipe extends AppCompatActivity {
     LinearLayout layout;
     Context context;
     EditText editText1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
