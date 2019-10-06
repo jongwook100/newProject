@@ -10,14 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11b04b1-2cd5-4e69-8a72-c29d08d1dc2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_custom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackrice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/foodlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/foodlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,30 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/LoadingActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackrice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="285">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +68,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="401">
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackrice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,10 +102,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/foodlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="3156">
+              <caret line="221" column="11" selection-start-line="221" selection-start-column="11" selection-end-line="221" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6717#7249#0" expanded="true" />
+                <element signature="e#7248#7249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,37 +115,29 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1976">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="65" column="74" lean-forward="true" selection-start-line="65" selection-start-column="74" selection-end-line="65" selection-end-column="74" />
+            <state relative-caret-position="140">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1240#1917#0" expanded="true" />
-                <element signature="e#1574#1874#0" expanded="true" />
-                <element signature="e#1873#1874#0" expanded="true" />
-                <element signature="e#1916#1917#0" expanded="true" />
-                <element signature="e#2108#2422#0" expanded="true" />
-                <element signature="e#2421#2422#0" expanded="true" />
+                <element signature="e#317#331#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1708#1709#0" expanded="true" />
+                <element signature="e#1808#1809#0" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+                <element signature="e#2786#2800#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,13 +149,28 @@
           <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe1.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2414#2673#0" expanded="true" />
+                <element signature="e#2672#2673#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -172,36 +182,43 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_rice.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackriceActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_blackrice.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/LoadingActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_item_custom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/myfoodlist.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/foodlist.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackrice.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe1.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe1.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_list_view_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_list_view_adapter.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewItem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_list_view_item2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/foodlist.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
-    <option name="y" value="27" />
-    <option name="width" value="1194" />
-    <option name="height" value="771" />
+    <option name="x" value="-58" />
+    <option name="y" value="50" />
+    <option name="width" value="1267" />
+    <option name="height" value="783" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -235,9 +252,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,11 +365,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-58" y="50" width="1267" height="783" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.17006803" side_tool="true" weight="0.27863777" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.829932" visible="true" weight="0.20630373" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.829932" visible="true" weight="0.23860812" />
       <window_info id="Structure" order="2" sideWeight="0.17006803" side_tool="true" weight="0.27863777" />
       <window_info id="Favorites" order="3" sideWeight="0.17006803" side_tool="true" weight="0.27863777" />
       <window_info id="Build Variants" order="4" sideWeight="0.17006803" side_tool="true" weight="0.27863777" />
@@ -368,7 +382,7 @@
       <window_info anchor="bottom" id="TODO" order="2" weight="0.17250673" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32884097" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.23450135" />
+      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.26810476" />
       <window_info anchor="bottom" id="Android Profiler" order="6" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="8" />
@@ -418,137 +432,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_view_adapter.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_view_item.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/item_custom.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="47" column="58" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#730#744#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#2132#2133#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-            <element signature="e#2318#2319#0" expanded="true" />
-            <element signature="e#3199#3213#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item_custom.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_blackrice.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_myfoodlist.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/LoadingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/myfoodlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1960#2274#0" expanded="true" />
-            <element signature="e#2273#2274#0" expanded="true" />
-            <element signature="e#2474#2734#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#2785#3461#0" expanded="true" />
-            <element signature="e#3119#3418#0" expanded="true" />
-            <element signature="e#3417#3418#0" expanded="true" />
-            <element signature="e#3460#3461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/foodlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/item_custom.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_item_custom.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_myfoodlist.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/myfoodlist.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1976">
@@ -557,47 +444,165 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        <state relative-caret-position="171">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_view_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="40" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_custom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_blackrice.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/blackrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe1.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/ListViewAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="140">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#317#331#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1708#1709#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#2786#2800#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/content/Intent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="628" column="13" selection-start-line="628" selection-start-column="13" selection-end-line="628" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_foodlist.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe1.xml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/foodlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3156">
+          <caret line="221" column="11" selection-start-line="221" selection-start-column="11" selection-end-line="221" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6717#7249#0" expanded="true" />
+            <element signature="e#7248#7249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/LoadingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loading.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="266">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_recipe.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/org/techtown/newproject/MyRecipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="65" column="74" lean-forward="true" selection-start-line="65" selection-start-column="74" selection-end-line="65" selection-end-column="74" />
+        <state relative-caret-position="306">
+          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1240#1917#0" expanded="true" />
-            <element signature="e#1574#1874#0" expanded="true" />
-            <element signature="e#1873#1874#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#2108#2422#0" expanded="true" />
-            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2414#2673#0" expanded="true" />
+            <element signature="e#2672#2673#0" expanded="true" />
           </folding>
         </state>
       </provider>

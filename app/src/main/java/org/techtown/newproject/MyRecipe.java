@@ -40,10 +40,6 @@ public class MyRecipe extends AppCompatActivity {
         bt.add(j);
 
 
-
-
-
-
     //버튼 추가하는 코드
         button11.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -71,6 +67,15 @@ public class MyRecipe extends AppCompatActivity {
                     public void onClick(View view){
                         layout.removeView((View) bt.get(Integer.parseInt(editText1.getText().toString())));
                         bt.remove(Integer.parseInt(editText1.getText().toString()));
+                    }
+                }
+        );
+        Button rbutton =findViewById(R.id.jumprecipe);
+        rbutton.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View view){
+                        Intent intent=new Intent(getApplicationContext(), foodlist.class);
+                        startActivity(intent);
                     }
                 }
         );
