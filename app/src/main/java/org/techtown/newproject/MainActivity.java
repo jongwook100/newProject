@@ -28,6 +28,17 @@ public class MainActivity extends AppCompatActivity {
         String getTime = sdf.format(date);
 
         time.setText("Today"+getTime);
+        //
+        Button q=findViewById(R.id.sssbutton);
+        q.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View view){
+                        Intent intent=new Intent(getApplicationContext(), SelectActivity.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+        //
 
         Button infoButton=findViewById(R.id.informbutton);
         infoButton.setOnClickListener(
