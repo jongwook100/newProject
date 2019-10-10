@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mybutton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
-                        Intent intent=new Intent(getApplicationContext(), MyRecipe.class);
+                        Intent intent=new Intent(getApplicationContext(), MyRecipeDemo.class);
                         startActivity(intent);
                     }
                 }

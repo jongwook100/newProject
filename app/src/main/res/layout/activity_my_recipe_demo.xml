@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,12 +25,13 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/editText6"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="삭제하고자 하는 인덱스 값" />
+                    android:text="( )번째레시피 삭제" />
 
                 <Button
                     android:id="@+id/button13"
@@ -46,37 +48,31 @@
                     android:layout_margin="5dp"
                     android:background="@drawable/btn_whitegreen"
                     android:text="기존레시피" />
+
             </LinearLayout>
 
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:background="#00F0ECEC"
-                android:drawableLeft="@drawable/ukgaejang"
-                android:drawablePadding="18dip"
-                android:gravity="left|center_vertical"
-                android:paddingLeft="18dip"
-                android:layout_gravity="center"
-                android:text="육개장"
-                android:textSize="100px"
-                android:textColor="#000"
-                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="146dp"
+                android:layout_height="58dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:background="@drawable/btn_whitegreen"
-                android:text="추가하기"
-                android:textSize="20dp"
+                android:gravity="center"
+                android:text="작성하기"
                 android:textColor="#000"
-                android:textStyle="bold"
-                android:gravity="center" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="내용" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
