@@ -9,7 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyRecipeDemo"></activity>
+        <activity
+            android:name=".FinalActivity"
+            android:label="@string/title_activity_final"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SelectActivity3"
+            android:label="@string/title_activity_select3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectActivity2"
+            android:label="@string/title_activity_select2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyRecipeDemo" />
+        <activity
+            android:name=".selectActivity_feel"
+            android:label="@string/title_activity_select_feel"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SelectActivity"
             android:label="@string/title_activity_select"

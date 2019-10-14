@@ -38,12 +38,12 @@
 
 
     <Button
-        
+        android:id="@+id/selectButton_One_One"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="행복해요"
         android:textSize="30dp"
-
+        android:background="@drawable/btn_yellow"
         android:textColor="@android:color/white"
         android:layout_marginBottom="16dp"
 
@@ -53,21 +53,24 @@
 
 
     <Button
+        android:id="@+id/selectButton_One_Two"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="보통이에요"
-
+        android:background="@drawable/btn_yellow"
         android:textColor="@android:color/white"
         android:layout_marginBottom="16dp"
         android:textSize="30dp"
         >
     </Button>
 
+
     <Button
+        android:id="@+id/selectButton_One_Thr"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="우울해요"
-
+        android:background="@drawable/btn_yellow"
         android:textColor="@android:color/white"
         android:layout_marginBottom="16dp"
         android:textSize="30dp"
