@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="14dp"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="날씨는 어떤가요?"
+        android:textColor="#64DEFF"
+        android:textSize="35sp"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="30dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_weather"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="130dp"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/selectButton_Two_One"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="맑고 좋아요"
+        android:textSize="30dp"
+        android:background="@drawable/btn_light_blue"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+
+        >
+    </Button>
+
+
+    <Button
+        android:id="@+id/selectButton_Two_Two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="보통이에요"
+        android:background="@drawable/btn_light_blue"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:textSize="30dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/selectButton_Two_Thr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="흐리고 어두워요"
+        android:background="@drawable/btn_light_blue"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:textSize="30dp"
+        >
+    </Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
