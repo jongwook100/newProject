@@ -38,6 +38,7 @@
 
 
     <Button
+        android:id="@+id/selectButton_Fin_One"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="레시피 보러가기"
@@ -59,6 +60,7 @@
         />
 
     <Button
+        android:id="@+id/selectButton_Fin_Two"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="돌아가기"
