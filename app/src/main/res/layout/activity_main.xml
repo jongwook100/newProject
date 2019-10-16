@@ -168,7 +168,7 @@
         >
 
         <Button
-            android:id="@null"
+            android:id="@+id/calendarbutton"
             android:layout_width="240dp"
             android:layout_height="300dp"
             android:layout_margin="5dp"
