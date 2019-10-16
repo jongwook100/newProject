@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        Button CalendarButton=findViewById(R.id.calendarbutton);
-        infoButton.setOnClickListener(
+        Button calendarButton=findViewById(R.id.calendarbutton);
+        calendarButton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
                         Intent intent=new Intent(getApplicationContext(), CalendarActivity.class);
