@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
-    android:paddingTop="14dp"
+    android:paddingTop="14dp">
 
-
-
-    >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,8 +18,7 @@
         android:textSize="39sp"
         android:layout_marginBottom="16dp"
         android:paddingTop="30dp"
-        android:paddingBottom="30dp"
-        />
+        android:paddingBottom="30dp"/>
 
     <ImageView
         android:layout_width="match_parent"
@@ -32,13 +27,7 @@
         android:layout_gravity="center"
         android:src="@drawable/result_sample256"
         android:layout_marginBottom="20dp"
-        android:paddingBottom="0dp"
-
-        />
-
-
-
-
+        android:paddingBottom="0dp" />
 
     <Button
         android:id="@+id/selectButton_Fin_One"
@@ -48,9 +37,8 @@
         android:textSize="30dp"
         android:background="@drawable/btn_orange"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="16dp">
 
-        >
     </Button>
     <TextView
         android:layout_width="match_parent"
@@ -59,8 +47,7 @@
         android:gravity="center"
         android:text="Or"
         android:textSize="20dp"
-        android:layout_marginBottom="20dp"
-        />
+        android:layout_marginBottom="20dp"/>
 
     <Button
         android:id="@+id/selectButton_Fin_Two"
@@ -70,23 +57,13 @@
         android:background="@drawable/btn_orange"
         android:textColor="@android:color/white"
         android:layout_marginBottom="16dp"
-        android:textSize="30dp"
-        >
+        android:textSize="30dp">
     </Button>
-
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="10"
-        >
-
-
-
+        android:weightSum="10">
     </LinearLayout>
-
-
 </LinearLayout>

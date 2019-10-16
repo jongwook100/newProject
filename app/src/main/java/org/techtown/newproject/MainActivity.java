@@ -39,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-
-
-        //
-
         Button infoButton=findViewById(R.id.informbutton);
         infoButton.setOnClickListener(
                 new Button.OnClickListener(){

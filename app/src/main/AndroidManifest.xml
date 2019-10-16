@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
     package="org.techtown.newproject">
+
+    <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -8,7 +13,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".FinalActivity"
             android:label="@string/title_activity_final"
@@ -21,20 +27,17 @@
             android:name=".SelectActivity2"
             android:label="@string/title_activity_select2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MyRecipeDemo" />
-        <activity
-            android:name=".selectActivity_feel"
-            android:label="@string/title_activity_select_feel"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".SelectActivity"
             android:label="@string/title_activity_select"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MyRecipeDemo" />
         <activity android:name=".ListViewItem" />
         <activity android:name=".ListViewAdapter" />
-        <activity android:name=".blackrice" />
         <activity android:name=".LoadingActivity" />
         <activity android:name=".foodlist" />
+        <activity android:name=".RecipeActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
