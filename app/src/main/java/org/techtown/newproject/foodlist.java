@@ -39,6 +39,33 @@ public class foodlist extends AppCompatActivity {
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.blackrice),
                 "김치볶음밥", "재료 : 김치, 밥, 참기름");
 
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.curryrice),
+                "카레라이스", "재료 : 카레가루, 밥");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.bibimbap),
+                "비빔밥", "재료 : 밥, 고추장, 야채");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.samchijorim),
+                "삼치조림", "재료 : 삼치, 간장");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ukgaejang),
+                "육개장", "재료 : 소고기, 물, 파");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.blackrice),
+                "흑미밥", "재료 : 쌀, 흑미");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.miyeoksoup),
+                "미역국", "재료 : 돼지고기, 간장");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.janchinoodle),
+                "잔치국수", "재료 : 면, 간장");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.chickenbokkem),
+                "닭볶음탕", "재료 : 닭, 고추장");
+
+        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.chungsoup),
+                "청국장", "재료 : 청국장, 물");
+
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
