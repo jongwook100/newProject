@@ -1,6 +1,5 @@
 package org.techtown.newproject;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -9,10 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import java.io.File;
 import java.util.LinkedList;
 
 public class MyRecipeDemo extends AppCompatActivity {
@@ -46,7 +43,7 @@ public class MyRecipeDemo extends AppCompatActivity {
             }
         });
 
-        //원하는 요리법 삭제
+        /*원하는 요리법 삭제
         editText2 = (EditText) findViewById(R.id.editText6);
         Button please = (Button)findViewById(R.id.button13);
 
@@ -57,14 +54,14 @@ public class MyRecipeDemo extends AppCompatActivity {
                         bt.remove(Integer.parseInt(editText2.getText().toString())-1);
                     }
                 }
-        );
+        );*/
 
         //기존 레시피로 가는 코드
         Button rbutton =findViewById(R.id.jumprecipe);
         rbutton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
-                        Intent intent=new Intent(getApplicationContext(), foodlist.class);
+                        Intent intent=new Intent(getApplicationContext(), FoodListActivity.class);
                         startActivity(intent);
                     }
                 }

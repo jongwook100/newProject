@@ -12,7 +12,7 @@
         android:id="@+id/tv_date"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/cardview_dark_background"
+        android:background="#64DEFF"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
         android:textColor="#000"

@@ -1,14 +1,17 @@
 package org.techtown.newproject;
 
+import java.util.ArrayList;
+
 public class RecipeDTO {
     private String title;
-    private String name;
-    private String imageUrl;
+    private String source;
 
-    public RecipeDTO(String title, String name, String imageUrl) {
+    public ArrayList<Recipe> recipes;
+
+    public RecipeDTO(String title, String source) {
         this.title = title;
-        this.name = name;
-        this.imageUrl = imageUrl;
+        this.source = source;
+        recipes = new ArrayList<>();
     }
 
     public String getTitle() {
@@ -16,10 +19,10 @@ public class RecipeDTO {
     }
 
     public String getName() {
-        return name;
+        return source;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public void addRecipe(Recipe recipe) {
+        recipes.add(recipe);
     }
 }

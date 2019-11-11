@@ -9,26 +9,28 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class RecipeActivity extends AppCompatActivity {
     RecyclerView recyclerView;
-    RecyclerAdapter adapter;
+    private String title = "";
+    private String url = "";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        url = getIntent().getStringExtra("url");
+        title = getIntent().getStringExtra("title");
+        getSupportActionBar().setTitle(title);
+
         setContentView(R.layout.activity_recipe);
-
-        adapter = new RecyclerAdapter();
-        getData(adapter);
-
         recyclerView = findViewById(R.id.recyclerView_chart);
-
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(adapter);
+        getData();
+
 
     }
 
-    private void getData(RecyclerAdapter adapter){
-        RecipeParser recipeParser = new RecipeParser(adapter,this);
+    private void getData(){
+        RecipeParser recipeParser = new RecipeParser(this, title, url);
         recipeParser.execute();
     }
+
 }

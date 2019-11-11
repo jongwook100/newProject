@@ -18,8 +18,11 @@ import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemViewHolder> {
 
-    private ArrayList<RecipeDTO> listData = new ArrayList<>();
+    private RecipeDTO data;
     private View view;
+    RecyclerAdapter(RecipeDTO recipeDTO){
+        this.data = recipeDTO;
+    }
 
     @NonNull
     @Override
@@ -30,40 +33,33 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
     }
     @Override
     public void onBindViewHolder(@NonNull RecyclerAdapter.ItemViewHolder itemViewHolder, int i) {
-        itemViewHolder.onBind(listData.get(i));
+        itemViewHolder.onBind(data.recipes.get(i));
     }
     @Override
     public int getItemCount() {
-        return listData.size();
-    }
-
-    void addItem(RecipeDTO data) {
-        listData.add(data);
-        // 외부에서 item을 추가시킬 함수입니다.
+        return data.recipes.size();
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder{
-        private TextView txt_chartName, txt_chartTitle;
         private ImageView img_chart;
+        private TextView recipe_txt;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            txt_chartTitle = itemView.findViewById(R.id.txt_chartTitle);
-            txt_chartName = itemView.findViewById(R.id.txt_chartName);
-            img_chart     = itemView.findViewById(R.id.img_chart);
+            img_chart  = itemView.findViewById(R.id.img_chart);
+            recipe_txt = itemView.findViewById(R.id.txt_chartName);
         }
 
-        void onBind(RecipeDTO data) {
-            txt_chartTitle.setText(data.getTitle());
-            txt_chartName.setText(data.getName());
-            Glide.with(itemView.getContext()).asBitmap().load(data.getImageUrl()).
+        void onBind(Recipe data) {
+            recipe_txt.setText(data.getTxtUrl());
+            Glide.with(itemView.getContext()).asBitmap().load(data.getimgUrl()).
                     into(new SimpleTarget<Bitmap>() {
                         @Override
                         public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition){
                             img_chart.setImageBitmap(resource);
                         }
                     });
+
         }
     }
 }

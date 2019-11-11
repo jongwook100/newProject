@@ -10,14 +10,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.techtown.newproject.R;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         startActivity(new Intent(MainActivity.this, org.techtown.newproject.LoadingActivity.class));
 
         TextView time = findViewById(R.id.text_time);
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         String getTime = sdf.format(date);
 
         time.setText("Today"+getTime);
-        //
+
         Button q=findViewById(R.id.sssbutton);
         q.setOnClickListener(
                 new Button.OnClickListener(){
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         infoButton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
-                        Intent intent=new Intent(getApplicationContext(), foodlist.class);
+                        Intent intent=new Intent(getApplicationContext(), FoodListActivity.class);
                         startActivity(intent);
                     }
                 }
