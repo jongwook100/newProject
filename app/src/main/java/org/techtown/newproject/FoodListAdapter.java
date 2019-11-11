@@ -77,7 +77,6 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
-
             img_iconStr = itemView.findViewById(R.id.txt_iconStr);
             txt_titleStr = itemView.findViewById(R.id.txt_titleStr);
         }
@@ -93,7 +92,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
                     });
         }
     }
-
+   // 검색기능
     @Override
     public Filter getFilter() {
         if (listFilter == null) {
@@ -102,7 +101,6 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
 
         return listFilter ;
     }
-
 
     private class ListFilter extends Filter {
 
