@@ -43,29 +43,26 @@ public class MyRecipeDemo extends AppCompatActivity {
             }
         });
 
-        /*원하는 요리법 삭제
-        editText2 = (EditText) findViewById(R.id.editText6);
-        Button please = (Button)findViewById(R.id.button13);
-
-        please.setOnClickListener(
-                new Button.OnClickListener(){
-                    public void onClick(View view){
-                        layout.removeView((View) bt.get(Integer.parseInt(editText2.getText().toString())-1));
-                        bt.remove(Integer.parseInt(editText2.getText().toString())-1);
-                    }
-                }
-        );*/
 
         //기존 레시피로 가는 코드
         Button rbutton =findViewById(R.id.jumprecipe);
         rbutton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
-                        Intent intent=new Intent(getApplicationContext(), FoodListActivity.class);
+                        Intent intent=new Intent(getApplicationContext(), foodlist.class);
                         startActivity(intent);
                     }
                 }
         );
-
+        //홈으로 가기
+        Button homeButton=findViewById(R.id.homebutton2);
+        homeButton.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View view){
+                        Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(intent);
+                    }
+                }
+        );
     }
 }

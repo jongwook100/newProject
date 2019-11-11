@@ -9,10 +9,12 @@ import java.util.List;
 import java.util.Locale;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -66,6 +68,20 @@ public class CalendarActivity extends Activity {
     for (int i = 1; i < dayNum; i++) {
         dayList.add("");
     }
+        gridAdapter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView parent, View view, int position, long id) {
+                // get item
+                ListViewItem item = (ListViewItem) parent.getItemAtPosition(position) ;
+
+                // TODO : use item data.
+                if(item.getTitle()=="김치볶음밥") {
+                    Intent intent = new Intent(getApplicationContext(), RecipeActivity.class);
+                    startActivity(intent);
+
+                }
+            }
+        });
     setCalendarDate(mCal.get(Calendar.MONTH) + 1);
 
     gridAdapter = new GridAdapter(getApplicationContext(), dayList);
