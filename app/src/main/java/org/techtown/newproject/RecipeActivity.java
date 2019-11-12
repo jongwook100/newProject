@@ -17,6 +17,7 @@ public class RecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         url = getIntent().getStringExtra("url");
         title = getIntent().getStringExtra("title");
+
         getSupportActionBar().setTitle(title);
 
         setContentView(R.layout.activity_recipe);

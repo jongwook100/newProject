@@ -29,10 +29,12 @@ public class FoodParser extends AsyncTask<Void, Void, Void> {
 
                 final String list_sub_url = doc.select("#content > section > div.recipes > div > ul > li:nth-child(1) > p > a").attr("href");
 
+                final String list_sub_titleStr = doc.select("#content > section > div.recipes > div > ul > li:nth-child(1) > p").text();
+
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        adapter.addItem(new FoodListDTO(list_iconStr, list_titleStr, Common.recipe_url + list_sub_url));
+                        adapter.addItem(new FoodListDTO(list_iconStr, list_titleStr, Common.recipe_url + list_sub_url, list_sub_titleStr));
                         adapter.notifyDataSetChanged();
                     }
                 });

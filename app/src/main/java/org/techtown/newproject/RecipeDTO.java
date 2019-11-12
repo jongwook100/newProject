@@ -18,7 +18,7 @@ public class RecipeDTO {
         return title;
     }
 
-    public String getName() {
+    public String getSourse() {
         return source;
     }
 
