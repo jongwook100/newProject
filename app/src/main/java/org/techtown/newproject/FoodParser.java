@@ -25,13 +25,16 @@ public class FoodParser extends AsyncTask<Void, Void, Void> {
                 Document doc = Jsoup.connect(Common.recipe_chart_url + recipe).get();
                 final String list_titleStr = recipe;
 
-                final String list_iconStr = doc.select("#content > section > div.recipes > div > ul > li:nth-child(1) > a").attr("src");
+                final String list_iconStr = doc.select("#content > section > div.recipes > div > ul > li:nth-child(1) > a  > img").attr("src");
+
                 final String list_sub_url = doc.select("#content > section > div.recipes > div > ul > li:nth-child(1) > p > a").attr("href");
+
+                final String list_sub_titleStr = doc.select("#content > section > div.recipes > div > ul > li:nth-child(1) > p").text();
 
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        adapter.addItem(new FoodListDTO(list_iconStr, list_titleStr, Common.recipe_url + list_sub_url));
+                        adapter.addItem(new FoodListDTO(list_iconStr, list_titleStr, Common.recipe_url + list_sub_url, list_sub_titleStr));
                         adapter.notifyDataSetChanged();
                     }
                 });

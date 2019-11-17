@@ -1,60 +1,52 @@
 package org.techtown.newproject;
 
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.view.View;
-import android.widget.Button;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.techtown.newproject.Common.Common;
 
 import java.io.IOException;
 
 public class RecipeParser extends AsyncTask<Void, Void, Void> {
-    static final String Recipe_chart_url = "http://haemukja.com/recipes?utf8=%E2%9C%93&sort=rlv&name=%EA%B9%80%EC%B9%98%EB%B3%B6%EC%9D%8C%EB%B0%A5n";
-    static final String Recipe_chart_url_sub = "http://haemukja.com/recipes/2500";
-
-
-    private RecyclerAdapter adapter;
     private RecipeActivity activity;
+    private String url;
+    private String title;
 
-    public RecipeParser(RecyclerAdapter adapter, RecipeActivity activity){
-        this.adapter = adapter;
+
+    public RecipeParser(RecipeActivity activity, String title ,String url) {
         this.activity = activity;
+        this.url = url;
+        this.title = title;
     }
 
     @Override
     protected Void doInBackground(Void... voids) {
         try {
-            for(int i = 1; i < 10; i++) {
-                Document doc = Jsoup.connect(Recipe_chart_url).get();
-                Document doc_sub = Jsoup.connect(Recipe_chart_url_sub).get();
+            Document doc = Jsoup.connect(url).get();
+            final String list_decStr = doc.select("#modal-content > div > div.view_recipe > section.sec_info > div > div.btm > ul > p").text();
+            final RecipeDTO recipeDTO = new RecipeDTO(title,list_decStr);
 
-                final String list_title = doc.select("#content > section > div.recipes > div > ul > li:nth-child(1) > p").text();
+            for (int i = 1; i <= 12; i++) {
+                final String list_recipe = doc.select("#container > div.inpage-recipe > div > div.view_recipe > section.sec_detail > section.sec_rcp_step > ol > li:nth-child(" + i + ") > p").text();
+                final String list_imageUrl = doc.select("#container > div.inpage-recipe > div > div.view_recipe > section.sec_detail > section.sec_rcp_step > ol > li:nth-child(" + i + ") > div > img").attr("src");
 
-                final String list_name = doc_sub.select("#container > div.inpage-recipe > div > div.view_recipe > section.sec_detail > section.sec_rcp_step > ol > li:nth-child(" + i + ") > p").text();
-
-                final String list_imageUrl = doc_sub.select("#container > div.inpage-recipe > div > div.view_recipe > section.sec_detail > section.sec_rcp_step > ol > li:nth-child(" + i + ") > div > img").attr("src");
-
-
-                System.out.println("RecipeParser : " + list_imageUrl + list_title + ":   ");
-                System.out.println("RecipeParser : " + list_name + ":  ");
-
-                activity.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        adapter.addItem(new RecipeDTO(list_title, list_name, list_imageUrl));
-                        adapter.notifyDataSetChanged();
-                    }
-                });
+                recipeDTO.addRecipe(new Recipe(list_recipe, list_imageUrl, list_decStr));
             }
 
-            System.out.println("loaded");
-            }
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    activity.recyclerView.setAdapter(new RecyclerAdapter(recipeDTO));
+
+                }
+            });
+        }
         catch (IOException e) {
             e.printStackTrace();
-            }
-            return null;
         }
-
+        return null;
+    }
 }

@@ -56,6 +56,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
                 Intent intent = new Intent(v.getContext(),RecipeActivity.class);
                 intent.putExtra("url",foodData.get(final_i).getSubUrl());
                 intent.putExtra("title",foodData.get(final_i).getTitleStr());
+                intent.putExtra("sub_title",foodData.get(final_i).getSub_titleStr());
                 context.startActivity(intent.addFlags(FLAG_ACTIVITY_NEW_TASK));
             }
         });
@@ -72,18 +73,19 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder{
-        private TextView txt_titleStr;
+        private TextView txt_titleStr, txt_sub_titleStr;
         private ImageView img_iconStr;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
-
             img_iconStr = itemView.findViewById(R.id.txt_iconStr);
             txt_titleStr = itemView.findViewById(R.id.txt_titleStr);
+            txt_sub_titleStr = itemView.findViewById(R.id.txt_sub_titleStr);
         }
 
         void onBind(FoodListDTO data) {
             txt_titleStr.setText(data.getTitleStr());
+            txt_sub_titleStr.setText(data.getSub_titleStr());
             Glide.with(itemView.getContext()).asBitmap().load(data.getIcon()).
                     into(new SimpleTarget<Bitmap>() {
                         @Override
@@ -93,7 +95,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
                     });
         }
     }
-
+   // 검색기능
     @Override
     public Filter getFilter() {
         if (listFilter == null) {
@@ -102,7 +104,6 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
 
         return listFilter ;
     }
-
 
     private class ListFilter extends Filter {
 

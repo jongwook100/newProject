@@ -42,16 +42,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
 
     class ItemViewHolder extends RecyclerView.ViewHolder{
         private ImageView img_chart;
-        private TextView recipe_txt;
+        private TextView recipe_txt, source_txt;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             img_chart  = itemView.findViewById(R.id.img_chart);
             recipe_txt = itemView.findViewById(R.id.txt_chartName);
+            source_txt = itemView.findViewById(R.id.txt_source);
         }
 
         void onBind(Recipe data) {
             recipe_txt.setText(data.getTxtUrl());
+            source_txt.setText(data.getSucUrl());
             Glide.with(itemView.getContext()).asBitmap().load(data.getimgUrl()).
                     into(new SimpleTarget<Bitmap>() {
                         @Override
