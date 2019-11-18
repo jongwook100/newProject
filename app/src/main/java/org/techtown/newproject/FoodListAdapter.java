@@ -23,16 +23,20 @@ import java.util.ArrayList;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
-public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemViewHolder> implements Filterable {
+public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemViewHolder> /*implements Filterable*/ {
 
     private ArrayList<FoodListDTO> foodData = new ArrayList<FoodListDTO>();
-    private ArrayList<FoodListDTO> filteredItemList = foodData ;
-    Filter listFilter;
+
+   // private ArrayList<FoodListDTO> unFilteredlist = foodData;
+   // private ArrayList<FoodListDTO> filteredList = foodData;
+
     private View foodview;
     private Context context;
 
-    public FoodListAdapter(Context context){
+    public FoodListAdapter(Context context/*, ArrayList<FoodListDTO> foodData*/) {
         this.context = context;
+     //   this.unFilteredlist = foodData;
+     //   this.filteredList = foodData;
     }
 
 
@@ -53,15 +57,16 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
         itemViewHolder.txt_titleStr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),RecipeActivity.class);
-                intent.putExtra("url",foodData.get(final_i).getSubUrl());
-                intent.putExtra("title",foodData.get(final_i).getTitleStr());
-                intent.putExtra("sub_title",foodData.get(final_i).getSub_titleStr());
+                Intent intent = new Intent(v.getContext(), RecipeActivity.class);
+                intent.putExtra("url", foodData.get(final_i).getSubUrl());
+                intent.putExtra("title", foodData.get(final_i).getTitleStr());
+                intent.putExtra("sub_title", foodData.get(final_i).getSub_titleStr());
                 context.startActivity(intent.addFlags(FLAG_ACTIVITY_NEW_TASK));
             }
         });
 
     }
+
     @Override
     public int getItemCount() {
         return foodData.size();
@@ -72,7 +77,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
         // 외부에서 item을 추가시킬 함수입니다.
     }
 
-    class ItemViewHolder extends RecyclerView.ViewHolder{
+    class ItemViewHolder extends RecyclerView.ViewHolder {
         private TextView txt_titleStr, txt_sub_titleStr;
         private ImageView img_iconStr;
 
@@ -89,56 +94,40 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
             Glide.with(itemView.getContext()).asBitmap().load(data.getIcon()).
                     into(new SimpleTarget<Bitmap>() {
                         @Override
-                        public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition){
+                        public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
                             img_iconStr.setImageBitmap(resource);
                         }
                     });
         }
     }
-   // 검색기능
+    /* 검색기능
     @Override
     public Filter getFilter() {
-        if (listFilter == null) {
-            listFilter = new ListFilter();
-        }
-
-        return listFilter ;
-    }
-
-    private class ListFilter extends Filter {
-
-        @Override
-        protected FilterResults performFiltering(CharSequence constraint) {
-            FilterResults results = new FilterResults() ;
-
-            if (constraint == null || constraint.length() == 0) {
-                results.values = foodData ;
-                results.count = foodData.size() ;
-            } else {
-                ArrayList<FoodListDTO> itemList = new ArrayList<FoodListDTO>() ;
-
-                for (FoodListDTO item : foodData) {
-                    if (item.getTitleStr().toUpperCase().contains(constraint.toString().toUpperCase()))
-                    {
-                        itemList.add(item) ;
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                String charString = constraint.toString();
+                if(charString.isEmpty()) {
+                    filteredList = unFilteredlist;
+                } else {
+                    ArrayList<FoodListDTO> filteringList = new ArrayList<>();
+                    for(String data : unFilteredlist) {
+                        if(foodData.toLowerCase().contains(charString.toLowerCase())) {
+                            filteringList.add(data);
+                        }
                     }
+                    filteredList = filteringList;
                 }
-
-                results.values = itemList ;
-                results.count = itemList.size() ;
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = filteredList;
+                return filterResults;
             }
-            return results;
-        }
 
-        @Override
-        protected void publishResults(CharSequence constraint, FilterResults results) {
-            filteredItemList = (ArrayList<FoodListDTO>) results.values ;
-
-            if (results.count > 0) {
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+                filteredList = (ArrayList<FoodListDTO>)results.values;
                 notifyDataSetChanged();
             }
-        }
-    }
-
-
+        };
+    } */
 }
