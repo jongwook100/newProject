@@ -43,9 +43,9 @@ public class MyRecipeDemo extends AppCompatActivity {
             }
         });
 
-        /*원하는 요리법 삭제
-        editText2 = (EditText) findViewById(R.id.editText6);
-        Button please = (Button)findViewById(R.id.button13);
+        //원하는 요리법 삭제
+        editText2 = (EditText) findViewById(R.id.deleteeditText);
+        Button please = (Button)findViewById(R.id.deletebutton2);
 
         please.setOnClickListener(
                 new Button.OnClickListener(){
@@ -54,7 +54,7 @@ public class MyRecipeDemo extends AppCompatActivity {
                         bt.remove(Integer.parseInt(editText2.getText().toString())-1);
                     }
                 }
-        );*/
+        );
 
         //기존 레시피로 가는 코드
         Button rbutton =findViewById(R.id.jumprecipe);

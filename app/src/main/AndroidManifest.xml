@@ -20,14 +20,6 @@
             android:label="@string/title_activity_final"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".SelectActivity3"
-            android:label="@string/title_activity_select3"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".SelectActivity2"
-            android:label="@string/title_activity_select2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".SelectActivity"
             android:label="@string/title_activity_select"
             android:theme="@style/AppTheme.NoActionBar" />
