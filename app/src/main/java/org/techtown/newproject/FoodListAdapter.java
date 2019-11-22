@@ -3,10 +3,13 @@ package org.techtown.newproject;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
@@ -23,27 +26,25 @@ import java.util.ArrayList;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
-public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemViewHolder> /*implements Filterable*/ {
+public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemViewHolder> implements Filterable {
 
     private ArrayList<FoodListDTO> foodData = new ArrayList<FoodListDTO>();
-
-   // private ArrayList<FoodListDTO> unFilteredlist = foodData;
-   // private ArrayList<FoodListDTO> filteredList = foodData;
+    private ArrayList<FoodListDTO> filteredList;
 
     private View foodview;
     private Context context;
 
-    public FoodListAdapter(Context context/*, ArrayList<FoodListDTO> foodData*/) {
+    public FoodListAdapter(Context context) {
         this.context = context;
-     //   this.unFilteredlist = foodData;
-     //   this.filteredList = foodData;
     }
+    EditText testText;
+
 
 
     @NonNull
     @Override
     public FoodListAdapter.ItemViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        this.foodview = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_custom, viewGroup, false);
+        this.foodview = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_foodlist, viewGroup, false);
         return new
                 FoodListAdapter.ItemViewHolder(foodview);
     }
@@ -100,7 +101,9 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
                     });
         }
     }
-    /* 검색기능
+
+
+
     @Override
     public Filter getFilter() {
         return new Filter() {
@@ -108,11 +111,11 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
             protected FilterResults performFiltering(CharSequence constraint) {
                 String charString = constraint.toString();
                 if(charString.isEmpty()) {
-                    filteredList = unFilteredlist;
+                    filteredList = foodData;
                 } else {
                     ArrayList<FoodListDTO> filteringList = new ArrayList<>();
-                    for(String data : unFilteredlist) {
-                        if(foodData.toLowerCase().contains(charString.toLowerCase())) {
+                    for(FoodListDTO data : foodData) {
+                        if(data.getTitleStr().equals(charString)){
                             filteringList.add(data);
                         }
                     }
@@ -129,5 +132,5 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
                 notifyDataSetChanged();
             }
         };
-    } */
+    }
 }
