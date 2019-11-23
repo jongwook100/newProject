@@ -73,7 +73,7 @@
                 />
 
             <Button
-                android:id="@+id/sssbutton"
+                android:id="@+id/Feelingbutton"
                 android:layout_width="240dp"
                 android:layout_height="300dp"
                 android:layout_margin="5dp"
@@ -90,7 +90,7 @@
 
         <RelativeLayout
             android:id="@+id/relativeLayout2"
-            android:layout_width="120dp"
+            android:layout_width="110dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="150dp"
@@ -167,7 +167,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="495dp"
+        android:layout_marginTop="500dp"
         android:layout_marginRight="100dp"
         android:background="@drawable/btn_pingk"
         android:textSize="20dp">
@@ -194,39 +194,6 @@
             android:layout_margin="10dp"
             android:background="@null"
             android:src="@drawable/today_bar" />
-    </RelativeLayout>
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="570dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="100dp"
-        android:background="@drawable/btn_pingk"
-        android:textSize="20dp">
-
-        <Button
-            android:id="@null"
-            android:layout_width="240dp"
-            android:layout_height="300dp"
-            android:background="@null" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null"
-            android:gravity="center"
-            android:text="회원 가입"
-            android:textColor="#000"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:background="@null"
-            android:src="@drawable/today_bar" />
     </RelativeLayout>
 </RelativeLayout>

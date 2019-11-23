@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
         time.setText("Today"+getTime);
 
-        Button q=findViewById(R.id.sssbutton);
+        Button q=findViewById(R.id.Feelingbutton);
         q.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
-                        Intent intent=new Intent(getApplicationContext(), SelectActivity.class);
+                        Intent intent=new Intent(getApplicationContext(), FeelingSelectActivity.class);
                         startActivity(intent);
                     }
                 }

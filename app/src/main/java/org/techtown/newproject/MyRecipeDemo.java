@@ -25,11 +25,11 @@ public class MyRecipeDemo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_recipe_demo);
 
-        buttona = (Button)findViewById(R.id.button11);
-        layout = (LinearLayout)findViewById(R.id.layout);
+        buttona = findViewById(R.id.button11);
+        layout = findViewById(R.id.layout);
         context = this;
 
-        editText1=(EditText)findViewById(R.id.editText4);
+        editText1=findViewById(R.id.editText4);
         bt.add(editText1);
 
         //에디트텍스트 추가하는 코드,링크드리스트로 구현
@@ -44,13 +44,13 @@ public class MyRecipeDemo extends AppCompatActivity {
         });
 
         //원하는 요리법 삭제
-        editText2 = (EditText) findViewById(R.id.deleteeditText);
-        Button please = (Button)findViewById(R.id.deletebutton2);
+        editText2 = findViewById(R.id.deleteeditText);
+        Button please = findViewById(R.id.deletebutton2);
 
         please.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
-                        layout.removeView((View) bt.get(Integer.parseInt(editText2.getText().toString())-1));
+                        layout.removeView( bt.get(Integer.parseInt(editText2.getText().toString())-1));
                         bt.remove(Integer.parseInt(editText2.getText().toString())-1);
                     }
                 }
