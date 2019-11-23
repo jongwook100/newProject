@@ -118,12 +118,12 @@ public class FeelingFood {
 
         int src_1[]={SOURCE_CHICKEN};
         int tasty_1[] = {TASTY_SWEET, TASTY_MIDE};
-        foods.add(new FeelingFood("치킨 스테이크",true,src_1,HOW_ROAST,true,tasty_1));
+        foods.add(new FeelingFood("치킨스테이크",true,src_1,HOW_ROAST,true,tasty_1));
 
 
         int src_2[]={SOURCE_PORK, SOURCE_KiMCHI};
         int tasty_2[] = {TASTY_SPICY,TASTY_SWEET, TASTY_FRESH};
-        foods.add(new FeelingFood("매운 김치찜",false,src_2,HOW_BOIL,true,tasty_2));
+        foods.add(new FeelingFood("매운김치찜",false,src_2,HOW_BOIL,true,tasty_2));
 
 
         int src_3[]={SOURCE_PORK};
@@ -133,7 +133,7 @@ public class FeelingFood {
 
         int src_4[]={SOURCE_PORK};
         int tasty_4[] = {TASTY_SPICY,TASTY_SWEET, TASTY_MIDE};
-        foods.add(new FeelingFood("쇠고기 비빔국수",true,src_4,HOW_STIR_FRY,false,tasty_4));
+        foods.add(new FeelingFood("쇠고기비빔국수",true,src_4,HOW_STIR_FRY,false,tasty_4));
 
 
         int src_5[]={SOURCE_PORK};
@@ -168,7 +168,7 @@ public class FeelingFood {
 
         int src_11[]={SOURCE_PORK};
         int tasty_11[] = {TASTY_SWEET, TASTY_SPICY, TASTY_FRESH};
-        foods.add(new FeelingFood("고추참치 비빕면",false,src_11,HOW_STIR_FRY,false,tasty_11));
+        foods.add(new FeelingFood("고추참치비빕면",false,src_11,HOW_STIR_FRY,false,tasty_11));
 
 
         int src_12[]={SOURCE_PORK};
@@ -193,12 +193,12 @@ public class FeelingFood {
 
         int src_16[]={SOURCE_PORK};
         int tasty_16[] = {TASTY_SWEET, TASTY_MIDE};
-        foods.add(new FeelingFood("뚝배기 불고기",true,src_16,HOW_STIR_FRY,true,tasty_16));
+        foods.add(new FeelingFood("뚝배기불고기",true,src_16,HOW_STIR_FRY,true,tasty_16));
 
 
         int src_17[]={SOURCE_PORK};
         int tasty_17[] = {TASTY_SWEET, TASTY_PALATABLE};
-        foods.add(new FeelingFood("고기 볶음밥",true,src_17,HOW_STIR_FRY,true,tasty_17));
+        foods.add(new FeelingFood("고기볶음밥",true,src_17,HOW_STIR_FRY,true,tasty_17));
 
 
         int src_18[]={SOURCE_PORK};
@@ -213,7 +213,7 @@ public class FeelingFood {
 
         int src_20[]={SOURCE_KiMCHI};
         int tasty_20[] = {TASTY_SWEET, TASTY_SPICY, TASTY_FRESH};
-        foods.add(new FeelingFood("매운 당면찌게",false,src_20,HOW_BOIL,true,tasty_20));
+        foods.add(new FeelingFood("매운당면찌게",false,src_20,HOW_BOIL,true,tasty_20));
 
 
         int src_21[]={SOURCE_PORK, SOURCE_CHICKEN};
@@ -233,17 +233,17 @@ public class FeelingFood {
 
         int src_24[]={SOURCE_KiMCHI};
         int tasty_24[] = {TASTY_SWEET, TASTY_SPICY};
-        foods.add(new FeelingFood("닭날개 꼬치",false,src_24,HOW_FRY,true,tasty_24));
+        foods.add(new FeelingFood("닭날개꼬치",false,src_24,HOW_FRY,true,tasty_24));
 
 
         int src_25[]={SOURCE_PORK};
         int tasty_25[] = {TASTY_SWEET, TASTY_FRESH, TASTY_MIDE};
-        foods.add(new FeelingFood("소고기 미니 김밥",true,src_25,HOW_ROAST,true,tasty_25));
+        foods.add(new FeelingFood("소고기미니김밥",true,src_25,HOW_ROAST,true,tasty_25));
 
 
         int src_26[]={SOURCE_CHICKEN};
         int tasty_26[] = {TASTY_SWEET, TASTY_SPICY, TASTY_PALATABLE};
-        foods.add(new FeelingFood("닭똥집 튀김",true,src_26,HOW_FRY,true,tasty_26));
+        foods.add(new FeelingFood("닭똥집튀김",true,src_26,HOW_FRY,true,tasty_26));
 
 
         int src_27[]={SOURCE_CHICKEN};
@@ -263,7 +263,7 @@ public class FeelingFood {
 
         int src_30[]={SOURCE_PORK};
         int tasty_30[] = {TASTY_SWEET, TASTY_PALATABLE, TASTY_MIDE};
-        foods.add(new FeelingFood("돈까스 국수",true,src_30,HOW_FRY,false,tasty_30));
+        foods.add(new FeelingFood("돈까스국수",true,src_30,HOW_FRY,false,tasty_30));
 
 
         int src_31[]={SOURCE_PORK};

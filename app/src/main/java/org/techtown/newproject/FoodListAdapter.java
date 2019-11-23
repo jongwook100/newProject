@@ -37,9 +37,6 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
     public FoodListAdapter(Context context) {
         this.context = context;
     }
-    EditText testText;
-
-
 
     @NonNull
     @Override
@@ -101,8 +98,6 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
                     });
         }
     }
-
-
 
     @Override
     public Filter getFilter() {

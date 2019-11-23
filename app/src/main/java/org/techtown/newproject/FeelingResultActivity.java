@@ -41,6 +41,7 @@ public class FeelingResultActivity extends AppCompatActivity {
 
         System.out.println(selectResult);
 
+
         int i = 0;
         while(i < string.length){
             for(FeelingFood food : allFood){
@@ -55,10 +56,10 @@ public class FeelingResultActivity extends AppCompatActivity {
 
         String temp = " ";
         for(FeelingFood f : selectedFood){
-            temp = temp + f.name + "," ;
+            temp = temp + f.name + "\n" ;
         }
         result = findViewById(R.id.text_feeling_result);
-        result.setText(selectResult.toString());
+        result.setText(temp);
 
         Button selectButton_Recipe=findViewById(R.id.selectButton_Recipe);
         selectButton_Recipe.setOnClickListener(
