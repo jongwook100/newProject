@@ -8,20 +8,37 @@ import org.jsoup.nodes.Document;
 import org.techtown.newproject.Common.Common;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class FoodParser extends AsyncTask<Void, Void, Void> {
     private FoodListAdapter adapter;
     private FoodListActivity activity;
 
+    private String[] recipes;
+
     public FoodParser(FoodListAdapter adapter, FoodListActivity activity){
         this.adapter = adapter;
         this.activity = activity;
+        this.recipes = Common.recipes;
+    }
+
+    public FoodParser(FoodListAdapter adapter, FoodListActivity activity, ArrayList<String> recipe){
+        this.adapter = adapter;
+        this.activity = activity;
+        this.recipes = recipe.toArray(new String[recipe.size()]);
+    }
+
+    public FoodParser(FoodListAdapter adapter, FoodListActivity activity, String recipe){
+        this.adapter = adapter;
+        this.activity = activity;
+        this.recipes = new String[1];
+        recipes[0] = recipe;
     }
 
     @Override
     protected Void doInBackground(Void... voids) {
         try {
-            for(String recipe : Common.recipes) {
+            for(String recipe : recipes) {
                 Document doc = Jsoup.connect(Common.recipe_chart_url + recipe).get();
                 final String list_titleStr = recipe;
 
@@ -34,8 +51,16 @@ public class FoodParser extends AsyncTask<Void, Void, Void> {
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        adapter.addItem(new FoodListDTO(list_iconStr, list_titleStr, Common.recipe_url + list_sub_url, list_sub_titleStr));
-                        adapter.notifyDataSetChanged();
+                        if(activity.isFilter){
+                            if(list_titleStr.contains(activity.getSearchString())){
+                                adapter.addItem(new FoodListDTO(list_iconStr, list_titleStr, Common.recipe_url + list_sub_url, list_sub_titleStr));
+                                adapter.notifyDataSetChanged();
+                            }
+                        }else{
+                            adapter.addItem(new FoodListDTO(list_iconStr, list_titleStr, Common.recipe_url + list_sub_url, list_sub_titleStr));
+                            adapter.notifyDataSetChanged();
+                        }
+
                     }
                 });
             }

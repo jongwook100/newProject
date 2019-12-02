@@ -17,24 +17,22 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".FeelingResultActivity"
-            android:label="@string/title_activity_final"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".FeelingSelectActivity"
-            android:label="@string/title_activity_select"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MyRecipeDemo" />
-        <activity android:name=".LoadingActivity" />
-        <activity android:name=".FoodListActivity" />
-        <activity android:name=".RecipeActivity"/>
-        <activity android:name=".CalendarActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoadingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FoodListActivity" />
+        <activity android:name=".RecipeActivity"/>
+        <activity android:name=".CalendarActivity"/>
+        <activity android:name=".MainActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"
