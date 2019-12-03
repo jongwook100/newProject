@@ -26,10 +26,9 @@ import java.util.ArrayList;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
-public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemViewHolder> implements Filterable {
+public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemViewHolder> {
 
     private ArrayList<FoodListDTO> foodData = new ArrayList<FoodListDTO>();
-    private ArrayList<FoodListDTO> filteredList;
 
     private View foodview;
     private Context context;
@@ -37,9 +36,6 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
     public FoodListAdapter(Context context) {
         this.context = context;
     }
-    EditText testText;
-
-
 
     @NonNull
     @Override
@@ -102,35 +98,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ItemVi
         }
     }
 
-
-
-    @Override
-    public Filter getFilter() {
-        return new Filter() {
-            @Override
-            protected FilterResults performFiltering(CharSequence constraint) {
-                String charString = constraint.toString();
-                if(charString.isEmpty()) {
-                    filteredList = foodData;
-                } else {
-                    ArrayList<FoodListDTO> filteringList = new ArrayList<>();
-                    for(FoodListDTO data : foodData) {
-                        if(data.getTitleStr().equals(charString)){
-                            filteringList.add(data);
-                        }
-                    }
-                    filteredList = filteringList;
-                }
-                FilterResults filterResults = new FilterResults();
-                filterResults.values = filteredList;
-                return filterResults;
-            }
-
-            @Override
-            protected void publishResults(CharSequence constraint, FilterResults results) {
-                filteredList = (ArrayList<FoodListDTO>)results.values;
-                notifyDataSetChanged();
-            }
-        };
+    public void clear(){
+        foodData.clear();
     }
 }

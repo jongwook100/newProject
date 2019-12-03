@@ -16,12 +16,18 @@ public class FeelingResultActivity extends AppCompatActivity {
     int selectedTasty, selectedSource, selectedHow;
     boolean selectedIsRice, selectedIsHappy;
 
+    ArrayList<String> results;
+
     TextView result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feeling_result);
+
+        results = new ArrayList<>();
+        result = findViewById(R.id.text_feeling_result);
+
 
         Intent intent = getIntent();
         selectedTasty = intent.getIntExtra("tasty",-1);
@@ -34,7 +40,6 @@ public class FeelingResultActivity extends AppCompatActivity {
         System.out.println(selectedTasty+":"+selectedSource+":"+selectedHow);
 
         Object[] string = selectResult.toArray();
-
 
         ArrayList<FeelingFood> selectedFood = new ArrayList<>();
         ArrayList<FeelingFood> allFood = FeelingFood.initFoodList();
@@ -53,18 +58,18 @@ public class FeelingResultActivity extends AppCompatActivity {
             i ++;
         }
 
-        String temp = " ";
+        String temp = "";
         for(FeelingFood f : selectedFood){
-            temp = temp + f.name + "," ;
+            temp = temp + f.name + "\n" ;
+            results.add(f.name);
         }
-        result = findViewById(R.id.text_feeling_result);
-        result.setText(selectResult.toString());
 
         Button selectButton_Recipe=findViewById(R.id.selectButton_Recipe);
         selectButton_Recipe.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View view){
                         Intent intent=new Intent(getApplicationContext(), FoodListActivity.class);
+                        intent.putExtra("result",results);
                         startActivity(intent);
                     }
                 }
@@ -79,6 +84,7 @@ public class FeelingResultActivity extends AppCompatActivity {
                     }
                 }
         );
+        result.setText(temp);
     }
 
 }

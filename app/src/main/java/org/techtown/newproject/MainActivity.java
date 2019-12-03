@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        startActivity(new Intent(MainActivity.this, org.techtown.newproject.LoadingActivity.class));
 
         TextView time = findViewById(R.id.text_time);
 
